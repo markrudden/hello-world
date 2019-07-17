@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="template" content="PF_Help_Template_Disclaimer_Footer.htt" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="search-keywords" content="calculate complex rules test formula" />
+<meta name="build tags" content="Exclude_from_Recruiter,Exclude_from_End_User" />
+<meta http-equiv="Content-Language" content="en-US" />
+<meta name="topic-check-list" content="Added To TOC" />
+<meta name="generator" content="Adobe RoboHelp 2015" />
+<title>About Testing Formulas</title>
+<link rel="StyleSheet" href="../default.css" type="text/css" />
+</head>
+<body>
+<h1>About Testing Formulas</h1>
+<p>Formulas are used in <?rh-udv_start name="A-Prod-Feature-Name" ?>PeopleFluent Talent Management<?rh-udv_end ?> to help calculate complex business rules in the following areas:</p>
+<ul>
+<li class="p-Bullet">
+<p>Plan Formulas and Functions (Performance and Compensation)</p>
+</li>
+<li class="p-Bullet">
+<p>Alerts (Performance)</p>
+</li>
+<li class="p-Bullet">
+<p>Reward Cycle Worksheet Row-level Formulas (Compensation)</p>
+</li>
+<li class="p-Bullet">
+<p>Goal Functions (Goal Management)</p>
+</li>
+<li class="p-Bullet">
+<p>Data Maps (Goal Management, Performance Management, Compensation [Bonus, Salary, and Stock], Reward Cycles [Bonus, Salary, Stock, and Total Compensation])</p>
+</li>
+</ul>
+<p>Once formulas are created, it is essential to test them to ensure they operate as required.</p>
+<p>Testing formulas consists of the following steps:</p>
+<ol>
+<li class="p-ListNumber">
+<p>Define the appropriate formulas.</p>
+</li>
+<li class="p-ListNumberNext">
+<p>Define and save unit tests.</p>
+</li>
+<li class="p-ListNumberNext">
+<p>Test each formula individually, or validate the entire set of formulas</p>
+</li>
+</ol>
+<p>The validate operation primarily checks that the actual result matches the expected result by running the formulas using the supplied unit tests. After running a unit test, the Result column displays one of three possible alert icons to indicate unexpected results or problems.</p>
+<p class="TableTitle">Table: Unit Test Alert Icons</p>
+<table class="StripedTable" cellspacing="0" width="95%">
+<col style="width: 4.712%;" />
+<col style="width: 95.288%;" />
+<tr class="t1st">
+<td>
+<p class="TableHead">Icon</p>
+</td>
+<td>
+<p class="TableHead">Description</p>
+</td>
+</tr>
+<tr class="t2Row">
+<td>
+<p class="TableBody"><img src="../unit_test_no_result_icon.jpg" alt="" title="Question mark icon" style="border: none;" width="23" height="23" border="0" /></p>
+</td>
+<td>
+<p class="TableBody">Indicates that either there are no tests associated with a formula or function or the tests have not been executed.</p>
+</td>
+</tr>
+<tr class="t1Row">
+<td>
+<p class="TableBody"><img src="../unit_test_successful.jpg" alt="" title="Passed icon" style="border: none;" width="21" height="20" border="0" /></p>
+</td>
+<td>
+<p class="TableBody">Indicates that all of the tests that have been run for the formula or function have passed.</p>
+</td>
+</tr>
+<tr class="t2Row">
+<td>
+<p class="TableBody"><img src="../unit_test_failed.jpg" alt="" title="Failed icon" style="border: none;" width="20" height="20" border="0" /></p>
+</td>
+<td>
+<p class="TableBody">Indicates that one or more of the tests for the function have failed.</p>
+</td>
+</tr>
+</table>
+<ol>
+<li class="p-Note">
+<p>Note: To help prevent errors caused by null values, use the null-safe functions (such as <span class="Code">safeAdd</span>) in your formulas as applicable. If you have created formulas with different conditional paths (such as if-then-else), you will need to test all conditions to make sure that the correct data type is returned in each case.</p>
+</li>
+</ol>
+<p>A Test Suite column and icon appears in those areas where unit tests can be executed. The results of the test are indicated by one of three icons that appear in the Result column, which can vary depending on the success or failure of the test. For more information, see <a href="troubleshoot_formulas.htm">Troubleshoot Formulas</a>.</p>
+<p class="AdditionalInformation"><span class="Menu">Additional Information</span></p>
+<p><a href="test_individual_formulas.htm">Test Individual Formulas</a></p>
+<p><a href="test_formula_set.htm">Test Formula Set</a></p>
+<p><a href="about_unit_tests.htm">About Unit Tests</a></p>
+</body>
+</html>
